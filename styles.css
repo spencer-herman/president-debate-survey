@@ -1,0 +1,21 @@
+h1{
+    background: linear-gradient(to right, red,white,blue);
+  
+    
+  }
+  
+  body{
+    background-color:#e6f7ff;
+  }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  form input,
+  form select,
+  form textarea,
+  form button {
+      margin-bottom: 20px; 
+  }

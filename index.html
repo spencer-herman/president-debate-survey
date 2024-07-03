@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css"></link>
+  <title>Presidential Debate Survey</title>
+  <body>
+    <!--this is the heading for the title -->
+    <h1 id="title">Presidential Debate Survey</h1>
+    <!--this is the description under the title -->
+    <p id="description">Who do you think won the recent presidential debate?</p>
+    
+    <!--form element with id survey-form -->
+    <form id="survey-form">
+      <!--inputs for name, email, date-->
+      <!--labels for each of these as well-->
+      <label id="name-label">Name: <input id="name" type="text" placeholder="John Smith" required></label>
+      <!--Email label-->
+      <label id='email-label'>Email: <input id="email" type="email" placeholder="email@blank.com" required></label>
+      <!--Number label-->
+      <label id="number-label">Number: <input id="number" type="number" min=1 max=30 placeholder="00"></label>
+      
+      <!--Selector that will allow me to ask the user if they are 18 or older-->
+      <label>Are you 18 years of age or older? <select id="dropdown"> 
+        <!-- Options for 18 or older-->
+        <option>Yes</option>
+        <option>No</option>
+
+      </select></label>
+
+      <!--two radio buttons that are grouped using the name attribute We'll do Donald Trump or Joe Biden-->
+      <label>
+        <input type="radio" name="candidate" value="trump">
+        Donald Trump
+      </label>
+      <label>
+        <input type="radio" name="candidate" value="biden">
+        Joe Biden
+      </label>
+
+      <!--select several fields from a series of checkboxes which have the value attribute We'll Do democrat independent or republican-->
+      <label>Democrat
+        <input type="checkbox" name="democrat" value="democrat"/>
+      </label>
+
+      <label>Republican
+        <input type="checkbox" name="republican" value="democrat"/>
+      </label>
+
+      <label>independent
+        <input type="checkbox" name="independent" value="independent"/>
+      </label>
+
+      <!--Text area box that allows the user to add extra comments about what they thought of the debate-->
+      <textarea placeholder="Tell us more about your thoughts on the debate">
+      </textarea>
+
+      <!--Submit button-->
+      <button id="submit">
+        Submit
+      </button>
+    </form>
+
+
+  </body>
+</html>
